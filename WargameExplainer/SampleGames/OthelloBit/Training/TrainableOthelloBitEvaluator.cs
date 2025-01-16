@@ -72,7 +72,7 @@ public class TrainableOthelloBitEvaluator : TrainableEvaluator
         int whiteMoves = m_gameState.GetMobility(false);
 
         afterStateValues[0] = (blackAdvantageCorner / 4.0f) * 0.6f + stoneAdvantage / 64.0f * 0.1f + 0.3f * ((float)(blackMoves - whiteMoves) / (blackMoves + whiteMoves));
-        afterStateValues[1] = numWhiteStones;
+        afterStateValues[1] = -afterStateValues[0];
 
         return false;
     }
