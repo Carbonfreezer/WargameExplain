@@ -22,7 +22,7 @@ public class TrainingProviderOthelloBit : TrainingInfoProvider
             new InnerPointObserver(false),
             new MobilityObserver()
         ];
-    public override int BatchSize => 1000; // 10000; //  100000;
+    public override int BatchSize => 10000; 
     public override float L2RegularizationParameter => 0.0f;
 
     public override IGameOutcomeClassifier GetGameOutcomeClassifier()
